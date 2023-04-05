@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Get the list of active users
+# Få liste over aktive brugere
 USERS=$(who | awk '{print $1}')
 
-# Loop through each user and print their resource usage
+# Skriv ressourceforbrug for hver bruger
 for USER in $USERS; do
     echo "User: $USER"
     top -b -n 1 -u $USER | awk 'NR<=7 {print}'
