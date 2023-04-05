@@ -11,9 +11,6 @@ for USER in $USERS; do
 done
 
 #
-#
-#
-#
 ##!/bin/bash
 #
 ## Get the list of active users
